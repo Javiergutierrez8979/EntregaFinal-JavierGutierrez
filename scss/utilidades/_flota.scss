@@ -1,0 +1,53 @@
+/*variable*/
+
+
+    
+
+
+    @mixin flex-colum-standar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    
+   
+        .titulo{
+            font-family: 'Oswald', sans-serif;
+            font-size: large;
+            color: antiquewhite;
+            margin: 1em;
+        
+        }
+    
+
+
+    .grid-container { 
+        display: grid;
+        justify-content: center;
+        align-items:flex-start  ;
+        grid-template-rows: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 10px;
+        column-gap: 10px;
+        padding-top: 2em;
+
+
+    
+    }
+    
+    .grid-item {
+
+        @include flex-colum-standar();
+        padding: 10px;
+        color: antiquewhite;
+
+      
+
+        }
+
+        .p-grid{
+            margin: 5%;
+        }
+    ;

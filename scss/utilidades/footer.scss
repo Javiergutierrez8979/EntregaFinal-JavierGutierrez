@@ -1,0 +1,35 @@
+@mixin footer{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+
+    img {
+        padding: 1rem;
+        margin: 1rem;
+        width: 4em;
+        
+    }
+}
+
+.redes{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.powered{
+    display: flex;
+    justify-content: center;
+    padding: 1%;
+    height: 3em;
+    opacity: 0.3;
+
+}
+
+footer{
+    @include footer();
+}
+
+

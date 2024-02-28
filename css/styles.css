@@ -1,0 +1,207 @@
+/*quitando valores por defecto*/
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Oswald", sans-serif;
+  color: antiquewhite;
+}
+
+header #logo {
+  width: 10em;
+  margin-left: 0;
+}
+
+/*mixin del proyecto */
+/*styles*/
+body {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(9, 9, 10) 46%, rgb(75, 75, 88) 76%);
+}
+body main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1em;
+}
+
+.div-central {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.img-index {
+  width: 100%;
+  opacity: 0.8;
+  box-shadow: 10px 10px 5px 0px rgb(143, 139, 143);
+  filter: grayscale(50%);
+  -webkit-filter: grayscale(50%);
+}
+
+.texto {
+  display: block;
+  position: absolute;
+  bottom: 1%;
+  left: 3%;
+  margin: 1em;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+footer img {
+  padding: 1rem;
+  margin: 1rem;
+  width: 4em;
+}
+
+.img-flota {
+  padding: 0%;
+  margin: 1em;
+  width: 90%;
+  box-shadow: 10px 10px 5px 0px rgb(143, 139, 143);
+}
+
+/*servicios*/
+.sec-servicios {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.sec-servicios div .img-servicios {
+  width: 40rem;
+  opacity: 0.8;
+}
+.sec-servicios .div-servicios {
+  padding: 2em;
+}
+.sec-servicios .div-servicios h1 {
+  font-family: "Oswald", sans-serif;
+  font-size: large;
+  color: antiquewhite;
+  margin: 1em;
+}
+.sec-servicios .div-servicios p {
+  margin: 1em;
+}
+
+/*Nosotros*/
+.sec-nosotros {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.sec-nosotros .titulos {
+  font-family: "Oswald", sans-serif;
+  font-size: large;
+  color: antiquewhite;
+  margin: 1em;
+}
+.sec-nosotros p {
+  margin: 1em;
+}
+.sec-nosotros div {
+  width: 100%;
+  margin: 2em;
+  padding: 1em;
+}
+
+/*Contacto*/
+.div-contacto .titulos {
+  color: antiquewhite;
+  font-family: "Oswald", sans-serif;
+  font-size: large;
+  color: antiquewhite;
+  margin: 1em;
+}
+
+/*Efecto*/
+header:hover #logo {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+}
+
+header {
+  overflow: hidden;
+}
+
+.img-index:hover {
+  filter: saturate(180%);
+  -webkit-filter: saturate(180%);
+}
+
+@media only screen and (min-width: 300px) and (max-width: 1024px) {
+  body {
+    background: rgb(25, 27, 39);
+    background: linear-gradient(45deg, rgb(25, 27, 39) 0%, rgb(75, 75, 88) 76%);
+  }
+  .titulo {
+    display: block;
+    position: absolute;
+    top: 10em;
+    font-family: "Oswald", sans-serif;
+    font-size: large;
+    color: antiquewhite;
+    margin: 1em;
+  }
+  p {
+    margin: 1em;
+  }
+  .grid-container {
+    margin: 0%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+  .grid-item-text-1 {
+    grid-column: 1/5;
+    grid-row: 2;
+  }
+  .grid-item-text2 {
+    grid-column: 1/5;
+    grid-row: 4;
+  }
+  .grid-item1 {
+    grid-column: 1/4;
+    grid-row: 1;
+    width: 90%;
+  }
+  .grid-item2 {
+    grid-column: 1/5;
+    grid-row: 3;
+    width: 90%;
+  }
+  .sec-servicios {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .div-central {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: inherit;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+  }
+  .texto {
+    position: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.sec-servicios div .img-servicios {
+  width: 100%;
+  box-shadow: 10px 10px 5px 0px rgb(143, 139, 143);
+}
+
+/*# sourceMappingURL=styles.css.map */

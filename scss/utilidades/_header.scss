@@ -1,0 +1,23 @@
+@keyframes latidos {
+    from { transform: none; }
+    50% { transform: scale(1.4); -webkit-transform: scale(1.4); -moz-transform: scale(1.4); -ms-transform: scale(1.4); -o-transform: scale(1.4); }
+    to { transform: none; } }
+
+header {
+    #logo {
+    width: 10em;
+    margin-left: 0 ;
+    filter: drop-shadow(12px 5px 10px #000000);
+    animation: latidos 1s 1;
+    -webkit-animation: latidos 1s 1;
+
+} 
+
+.navbar-toggler{
+    border-color: beige;
+    margin-right: 10%;
+}
+
+
+}
+
